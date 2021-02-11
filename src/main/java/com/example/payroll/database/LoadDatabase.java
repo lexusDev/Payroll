@@ -1,5 +1,10 @@
-package com.example.payroll;
+package com.example.payroll.database;
 
+import com.example.payroll.Status;
+import com.example.payroll.models.Employee;
+import com.example.payroll.models.Order;
+import com.example.payroll.repositories.EmployeeRepository;
+import com.example.payroll.repositories.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -7,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-class LoadDatabase {
+public class LoadDatabase {
 
   private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 

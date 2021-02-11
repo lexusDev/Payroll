@@ -1,8 +1,8 @@
-package com.example.payroll;
+package com.example.payroll.exceptions;
 
 public class OrderNotFoundException extends RuntimeException {
 
-    OrderNotFoundException(Long id) {
+    public OrderNotFoundException(Long id) {
         super("Could not find employee " + id);
     }
 }
